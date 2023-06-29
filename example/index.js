@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import MonacoEditor, { MonacoDiffEditor } from "react-monaco-editor";
+import MonacoEditor, { MonacoDiffEditor } from "@danieldx/react-monaco-editor";
 
 class CodeEditor extends React.Component {
   constructor() {
@@ -14,6 +14,14 @@ class CodeEditor extends React.Component {
   onChange = (newValue) => {
     console.log("onChange", newValue); // eslint-disable-line no-console
   };
+
+  editorWillMount = (monaco) => {
+    monaco.languages.typescript.javascriptDefaults.setDiagnosticsOptions({
+      noSemanticValidation: false,
+      noSyntaxValidation: false,
+      enableCurlyBracesExpressionMode: true
+    });
+  }
 
   editorDidMount = (editor) => {
     // eslint-disable-next-line no-console
@@ -72,6 +80,7 @@ class CodeEditor extends React.Component {
           options={options}
           onChange={this.onChange}
           editorDidMount={this.editorDidMount}
+          editorWillMount={this.editorWillMount}
           theme={theme}
         />
       </div>

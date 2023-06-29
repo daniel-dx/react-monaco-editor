@@ -1,6 +1,9 @@
 {
-  "name": "react-monaco-editor",
+  "name": "@danieldx/react-monaco-editor",
   "version": "0.51.0",
+  "publishConfig": {
+		"access": "public"
+	},
   "description": "Monaco Editor for React",
   "main": "lib/index.js",
   "module": "lib/index",
@@ -26,11 +29,12 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/react-monaco-editor/react-monaco-editor/issues"
+    "url": "https://github.com/daniel-dx/react-monaco-editor.git/issues"
   },
-  "homepage": "https://github.com/react-monaco-editor/react-monaco-editor",
-  "repository": "https://github.com/react-monaco-editor/react-monaco-editor",
+  "homepage": "https://github.com/daniel-dx/react-monaco-editor.git",
+  "repository": "https://github.com/daniel-dx/react-monaco-editor.git",
   "devDependencies": {
+    "@danieldx/monaco-editor": "^0.36.11",
     "@types/react": "^18.0.25",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",
@@ -42,15 +46,14 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "monaco-editor": "^0.34.1",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "rimraf": "^4.1.2",
     "typescript": "^4.9.3"
   },
   "peerDependencies": {
+    "@danieldx/monaco-editor": "^0.36.11",
     "@types/react": ">=16 <= 18",
-    "monaco-editor": "^0.34.1",
     "react": ">=16 <= 18"
   },
   "dependencies": {

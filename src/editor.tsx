@@ -1,4 +1,4 @@
-import * as monaco from "monaco-editor/esm/vs/editor/editor.api";
+import * as monaco from "@danieldx/monaco-editor/esm/vs/editor/editor.api";
 import * as React from "react";
 import { useEffect, useMemo, useRef } from "react";
 import { MonacoEditorProps } from "./types";

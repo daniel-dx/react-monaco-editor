@@ -1,4 +1,4 @@
-import * as monaco from "monaco-editor/esm/vs/editor/editor.api";
+import * as monaco from "@danieldx/monaco-editor/esm/vs/editor/editor.api";
 import MonacoDiffEditor from "./diff";
 import MonacoEditor from "./editor";
 
